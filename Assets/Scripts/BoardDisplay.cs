@@ -22,7 +22,24 @@ public class BoardDisplay : MonoBehaviour
 
     private void Update()
     {
-        
+        ForEachSquare((index, square) => square.PieceImage.sprite = board.PieceGrid[index].Id switch
+        {
+            PieceId.WHITE_PAWN      => whitePawnSpr,
+            PieceId.WHITE_KNIGHT    => whiteKnightSpr,
+            PieceId.WHITE_BISHOP    => whiteBishopSpr,
+            PieceId.WHITE_ROOK      => whiteRookSpr,
+            PieceId.WHITE_QUEEN     => whiteQueenSpr,
+            PieceId.WHITE_KING      => whiteKingSpr,
+                
+            PieceId.BLACK_PAWN      =>  blackPawnSpr,
+            PieceId.BLACK_KNIGHT    => blackKnightSpr,
+            PieceId.BLACK_BISHOP    => blackBishopSpr,
+            PieceId.BLACK_ROOK      => blackRookSpr,
+            PieceId.BLACK_QUEEN     => blackQueenSpr,
+            PieceId.BLACK_KING      => blackKingSpr,
+                
+            _ => null
+        });
     }
 
     private void OnValidate()
