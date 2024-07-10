@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -345,6 +349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -467,6 +475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -589,17 +601,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
-      value: 0.54901963
+      value: 0.07450981
       objectReference: {fileID: 0}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.g
-      value: 0.7058824
+      value: 0.26666668
       objectReference: {fileID: 0}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.r
-      value: 0.8235294
+      value: 0.54901963
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -711,6 +727,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -833,6 +853,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -955,6 +979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -1077,6 +1105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1199,6 +1231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1321,17 +1357,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
-      value: 0.07450981
+      value: 0.54901963
       objectReference: {fileID: 0}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.g
-      value: 0.27058825
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.r
-      value: 0.54509807
+      value: 0.8235295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1443,6 +1483,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1474,7 +1518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 248948279}
-  - component: {fileID: 248948278}
+  - component: {fileID: 248948280}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -1482,21 +1526,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &248948278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248948277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed301eed924f4ac478d551560caff7d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  width: 8
-  height: 8
-  startPositionFEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR
 --- !u!4 &248948279
 Transform:
   m_ObjectHideFlags: 0
@@ -1512,6 +1541,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248948280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248948277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db338c1d35d80e459000732ee0529c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &288495524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,6 +1653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1734,6 +1779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1856,6 +1905,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -1978,6 +2031,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -2100,6 +2157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -2222,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -2344,6 +2409,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -2603,6 +2672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -2725,6 +2798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -2839,6 +2916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701363861}
   - component: {fileID: 701363863}
+  - component: {fileID: 701363864}
   - component: {fileID: 701363862}
   m_Layer: 5
   m_Name: Board Display
@@ -2966,21 +3044,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a6121c49149eb42bfabb0ba331a993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightSquareColor: {r: 0.7379183, g: 0.756354, b: 0.7783019, a: 1}
-  darkSquareColor: {r: 0.23642758, g: 0.2813635, b: 0.31132078, a: 1}
-  whitePawnSpr: {fileID: 21300000, guid: 3aadd397ca4fc8849a3a52509e83f47d, type: 3}
-  whiteKnightSpr: {fileID: 21300000, guid: 2ed830e369f839f478839808354e7296, type: 3}
-  whiteBishopSpr: {fileID: 21300000, guid: 852769fd3b36d7c45854aeb9e40c3cd0, type: 3}
-  whiteRookSpr: {fileID: 21300000, guid: e244c500e9fa1234c9581a05a7d73c32, type: 3}
-  whiteQueenSpr: {fileID: 21300000, guid: 55e8024ab6bef4e43b20eac00dd6b340, type: 3}
-  whiteKingSpr: {fileID: 21300000, guid: e9c81961d15540f479ec868020883e94, type: 3}
-  blackPawnSpr: {fileID: 21300000, guid: be6d1dc2eee3d394ca261b5c1ef05469, type: 3}
-  blackKnightSpr: {fileID: 21300000, guid: a00e64fc2665285468615ce52039c123, type: 3}
-  blackBishopSpr: {fileID: 21300000, guid: f75e6346550621b4790cc7f1962a3e4d, type: 3}
-  blackRookSpr: {fileID: 21300000, guid: 763aa9ff04358984bbd708073796d124, type: 3}
-  blackQueenSpr: {fileID: 21300000, guid: 7f62fcf1df7a37747b8f8956d60500f6, type: 3}
-  blackKingSpr: {fileID: 21300000, guid: bd06c5ac9f8a2dc4bbe5364dc79e09b3, type: 3}
-  board: {fileID: 248948278}
+  lightSquareColor: {r: 0.6544589, g: 0.67471236, b: 0.7264151, a: 1}
+  darkSquareColor: {r: 0.11650054, g: 0.13105002, b: 0.20754719, a: 1}
+  whitePieceSprites:
+    pawn: {fileID: 21300000, guid: 3aadd397ca4fc8849a3a52509e83f47d, type: 3}
+    bishop: {fileID: 21300000, guid: 852769fd3b36d7c45854aeb9e40c3cd0, type: 3}
+    knight: {fileID: 21300000, guid: 2ed830e369f839f478839808354e7296, type: 3}
+    rook: {fileID: 21300000, guid: e244c500e9fa1234c9581a05a7d73c32, type: 3}
+    queen: {fileID: 21300000, guid: 55e8024ab6bef4e43b20eac00dd6b340, type: 3}
+    king: {fileID: 21300000, guid: e9c81961d15540f479ec868020883e94, type: 3}
+  blackPieceSprites:
+    pawn: {fileID: 21300000, guid: be6d1dc2eee3d394ca261b5c1ef05469, type: 3}
+    bishop: {fileID: 21300000, guid: f75e6346550621b4790cc7f1962a3e4d, type: 3}
+    knight: {fileID: 21300000, guid: a00e64fc2665285468615ce52039c123, type: 3}
+    rook: {fileID: 21300000, guid: 763aa9ff04358984bbd708073796d124, type: 3}
+    queen: {fileID: 21300000, guid: 7f62fcf1df7a37747b8f8956d60500f6, type: 3}
+    king: {fileID: 21300000, guid: bd06c5ac9f8a2dc4bbe5364dc79e09b3, type: 3}
+  manager: {fileID: 248948280}
+--- !u!114 &701363864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701363860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d45965667f61414eb04484fd2438f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 248948280}
 --- !u!1001 &741606021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3081,6 +3174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -3203,6 +3300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -3325,6 +3426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -3447,6 +3552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -3569,6 +3678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -3691,6 +3804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -3813,6 +3930,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -3966,6 +4087,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -4088,6 +4213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -4210,6 +4339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -4332,6 +4465,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -4454,6 +4591,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -4576,6 +4717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -4766,6 +4911,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -4888,6 +5037,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5010,6 +5163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5132,6 +5289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5254,6 +5415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5376,6 +5541,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -5498,6 +5667,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5625,6 +5798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5747,6 +5924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -5869,6 +6050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -5991,6 +6176,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -6113,6 +6302,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -6235,6 +6428,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -6357,6 +6554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -6479,6 +6680,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -6601,6 +6806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -6723,6 +6932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -6845,6 +7058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -6967,6 +7184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -7089,6 +7310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -7211,6 +7436,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -7333,6 +7562,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -7455,6 +7688,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -7577,6 +7814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -7699,6 +7940,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -7923,6 +8168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -8045,6 +8294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -8167,6 +8420,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -8289,6 +8546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.07450981
@@ -8411,6 +8672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -8533,6 +8798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185400376909559605, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
+      propertyPath: boardInteractionHandler
+      value: 
+      objectReference: {fileID: 701363864}
     - target: {fileID: 7276984390972160072, guid: 980dbaf34f3dc954a968fd801339cc8b, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
