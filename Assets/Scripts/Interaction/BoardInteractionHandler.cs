@@ -5,7 +5,7 @@ namespace Chessed
 {
     public class BoardInteractionHandler : MonoBehaviour
     {
-        [SerializeField] private BoardManager manager;
+        [SerializeField] private GameManager manager;
 
         private GameState GameState => manager.GameState;
         private Board Board => GameState.Board;
@@ -22,6 +22,8 @@ namespace Chessed
 
         public void OnSquareInteract(int index)
         {
+            if (manager.runningPromotion != null) return;
+            
             Square interactedSquare = Board.IndexToSquare(index);
             if (manager.selectedSquare == interactedSquare)
             {
@@ -35,7 +37,12 @@ namespace Chessed
                 {
                     if (interactedSquare != move.To) continue;
 
-                    manager.ExecuteMove(move);
+                    if (move.Type == MoveType.Promotion)
+                    {
+                        manager.ExecutePromotion(move.From, move.To, manager.GameState.CurrentPlayer);
+                    } else
+                        manager.ExecuteMove(move);
+                    
                     manager.selectedSquare = null;
                     return;
                 }

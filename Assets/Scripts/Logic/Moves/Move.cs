@@ -5,18 +5,11 @@ namespace Chessed.Logic
     public abstract class Move
     {
         public abstract MoveType Type { get; }
+        public abstract Square From { get; }
+        public abstract Square To { get; }
         
-        public Square From { get; }
-        public Square To { get; }
-
         public Vector2Int FromPos => From.Position;
         public Vector2Int ToPos => To.Position;
-
-        public Move(Square from, Square to)
-        {
-            From = from;
-            To = to;
-        }
 
         public abstract void Execute(Board board);
 
@@ -24,7 +17,7 @@ namespace Chessed.Logic
         {
             Side side = board[FromPos].side;
             Board boardCopy = board.Copy();
-            // Execute(boardCopy);
+            Execute(boardCopy);
             return !boardCopy.IsInCheck(side);
         }
     }

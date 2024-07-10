@@ -7,26 +7,31 @@ namespace Chessed.Logic
     public class Board
     {
         private const string STANDARD_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
-        
+
         private readonly Piece[,] pieces = new Piece[8, 8];
 
-        public static Board Default()
+        private readonly Dictionary<Side, Square> pawnSkipPositions = new Dictionary<Side, Square>
+        {
+            { Side.White, null },
+            { Side.Black, null }
+        };
+
+        public static Board Default() => LoadFromFEN(STANDARD_FEN);
+
+        public static Board LoadFromFEN(string fen)
         {
             Board board = new Board();
-            board.LoadFromFEN(STANDARD_FEN);
-            return board;
-        }
-
-        private void LoadFromFEN(string fen)
-        {
+            
             Piece[,] fenPieces = FEN.Parse(fen);
             for (int y = 0; y < 8; y++)
             {
                 for (int x = 0; x < 8; x++)
                 {
-                    pieces[x, y] = fenPieces[x, y];
+                    board.pieces[x, y] = fenPieces[x, y];
                 }
             }
+
+            return board;
         }
 
         public IEnumerable<Square> PieceSquares()
@@ -59,6 +64,54 @@ namespace Chessed.Logic
 
             return copy;
         }
+
+        public PieceCounter CountPieces()
+        {
+            PieceCounter counter = new PieceCounter();
+
+            foreach (Square square in PieceSquares())
+            {
+                Piece piece = this[square];
+                counter.Increment(piece.side, piece.Type);
+            }
+
+            return counter;
+        }
+
+        public bool HasInsufficientMaterial()
+        {
+            PieceCounter counter = CountPieces();
+            return IsKingVKing(counter) || IsKingBishopVKing(counter) ||
+                   IsKingKnightVKing(counter) || IsKingBishopVKingBishop(counter);
+        }
+
+        private static bool IsKingVKing(PieceCounter counter) => counter.TotalCount == 2;
+
+        private static bool IsKingBishopVKing(PieceCounter counter) => counter.TotalCount == 3 &&
+                                                                       (counter.White(PieceType.Bishop) == 1 ||
+                                                                        counter.Black(PieceType.Bishop) == 1);
+
+        private static bool IsKingKnightVKing(PieceCounter counter) => counter.TotalCount == 3 &&
+                                                                       (counter.White(PieceType.Knight) == 1 ||
+                                                                        counter.Black(PieceType.Knight) == 1);
+
+        private bool IsKingBishopVKingBishop(PieceCounter counter)
+        {
+            if (counter.TotalCount != 4) return false;
+
+            if (counter.White(PieceType.Bishop) != 1 || counter.Black(PieceType.Bishop) != 1) return false;
+
+            Square wBishopSquare = FindPiece(Side.White, PieceType.Bishop);
+            Square bBishopSquare = FindPiece(Side.Black, PieceType.Bishop);
+
+            return wBishopSquare.Color == bBishopSquare.Color;
+        }
+
+        private Square FindPiece(Side side, PieceType type) =>
+            PieceSquaresForSide(side).First(square => this[square].Type == type);
+        
+        public Square GetPawnSkipSquare(Side side) => pawnSkipPositions[side];
+        public void SetPawnSkipSquare(Side side, Square square) => pawnSkipPositions[side] = square;
 
         public bool IsSquareEmpty(Square square) => this[square] == null;
 

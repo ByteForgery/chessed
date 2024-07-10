@@ -8,7 +8,7 @@ namespace Chessed
     {
         [SerializeField] private Color lightSquareColor = Color.white, darkSquareColor = Color.black;
         [SerializeField] private PieceSpriteSet whitePieceSprites, blackPieceSprites;
-        [SerializeField] private BoardManager manager;
+        [SerializeField] private GameManager manager;
 
         private SquareDisplay[] squareDisplays;
 

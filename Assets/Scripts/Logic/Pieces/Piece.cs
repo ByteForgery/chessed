@@ -35,12 +35,6 @@ namespace Chessed.Logic
             }
         }
 
-        public void SetHasMoved()
-        {
-            hasMoved = true;
-            Debug.Log("HAS MOVED NOW");
-        }
-
         protected IEnumerable<Square> MoveSliding(Square from, Vector2Int[] dirs, Board board) =>
             dirs.SelectMany(dir => MoveSliding(from, dir, board));
 
@@ -50,5 +44,15 @@ namespace Chessed.Logic
                 Piece piece = board[move.ToPos];
                 return piece is { Type: PieceType.King };
             });
+    }
+    
+    public enum PieceType
+    {
+        Pawn,
+        Knight,
+        Bishop,
+        Rook,
+        Queen,
+        King
     }
 }
