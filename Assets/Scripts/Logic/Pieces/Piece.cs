@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -54,5 +55,32 @@ namespace Chessed.Logic
         Rook,
         Queen,
         King
+    }
+
+    public static class PieceTypeExtensions
+    {
+        public static Piece Create(this PieceType type, Side side) => type switch
+        {
+            PieceType.Pawn => new Pawn(side),
+            PieceType.Knight => new Knight(side),
+            PieceType.Bishop => new Bishop(side),
+            PieceType.Rook => new Rook(side),
+            PieceType.Queen => new Queen(side),
+            PieceType.King => new King(side),
+            _ => throw new ArgumentException($"Piece type {type} does not exist!")
+        };
+        
+        public static char BlackSymbol(this PieceType type) => type switch
+        {
+            PieceType.Pawn => 'p',
+            PieceType.Knight => 'n',
+            PieceType.Bishop => 'b',
+            PieceType.Rook => 'r',
+            PieceType.Queen => 'q',
+            PieceType.King => 'k',
+            _ => throw new ArgumentException($"Piece type {type} does not exist!")
+        };
+
+        public static char WhiteSymbol(this PieceType type) => char.ToUpper(BlackSymbol(type));
     }
 }

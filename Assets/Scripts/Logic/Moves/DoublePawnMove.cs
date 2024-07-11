@@ -16,11 +16,15 @@
             skippedSquare = new Square(from.X, (from.Y + to.Y) / 2);
         }
 
-        public override void Execute(Board board)
+        public override MoveResult Execute(Board board)
         {
             Side side = board[From].side;
+            
             board.SetPawnSkipSquare(side, skippedSquare);
             new NormalMove(From, To).Execute(board);
+
+            bool isCheck = board.IsInCheck(side.Opponent());
+            return new MoveResult(true, false, isCheck);
         }
     }
 }

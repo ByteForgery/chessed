@@ -16,10 +16,15 @@
             captureSquare = new Square(to.X, from.Y);
         }
         
-        public override void Execute(Board board)
+        public override MoveResult Execute(Board board)
         {
+            Side side = board[From].side;
+            
             new NormalMove(From, To).Execute(board);
             board[captureSquare] = null;
+
+            bool isCheck = board.IsInCheck(side.Opponent());
+            return new MoveResult(true, true, isCheck);
         }
     }
 }

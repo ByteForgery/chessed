@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -109,11 +110,67 @@ namespace Chessed.Logic
 
         private Square FindPiece(Side side, PieceType type) =>
             PieceSquaresForSide(side).First(square => this[square].Type == type);
+
+        private bool IsUnmovedKingAndRook(Square kingSquare, Square rookSquare)
+        {
+            if (IsSquareEmpty(kingSquare) || IsSquareEmpty(rookSquare)) return false;
+
+            Piece king = this[kingSquare];
+            Piece rook = this[rookSquare];
+
+            return king.Type == PieceType.King && rook.Type == PieceType.Rook &&
+                   !king.hasMoved && !rook.hasMoved;
+        }
+
+        public bool HasCastleRightKS(Side side) => side switch
+        {
+            Side.White => IsUnmovedKingAndRook(new Square(4, 7), new Square(7, 7)),
+            Side.Black => IsUnmovedKingAndRook(new Square(4, 0), new Square(7, 0)),
+            _ => false
+        };
+
+        public bool HasCastleRightQS(Side side) => side switch
+        {
+            Side.White => IsUnmovedKingAndRook(new Square(4, 7), new Square(0, 7)),
+            Side.Black => IsUnmovedKingAndRook(new Square(4, 0), new Square(0, 0)),
+            _ => false
+        };
+
+        private bool HasPawnInPosition(Side side, Square[] pawnSquares, Square skipSquare)
+        {
+            foreach (Square square in pawnSquares.Where(square => square.IsValid))
+            {
+                Piece piece = this[square];
+                if (piece == null || piece.side != side || piece.Type != PieceType.Pawn) continue;
+
+                EnPassantMove move = new EnPassantMove(square, skipSquare);
+                if (move.IsLegal(this)) return true;
+            }
+
+            return false;
+        }
+
+        public bool CanCaptureEnPassant(Side side)
+        {
+            Square skipSquare = GetPawnSkipSquare(side.Opponent());
+
+            if (skipSquare == null) return false;
+
+            Square[] pawnSquares = side switch
+            {
+                Side.White => new[] { skipSquare + Direction.SOUTH_EAST, skipSquare + Direction.SOUTH_WEST },
+                Side.Black => new[] { skipSquare + Direction.NORTH_EAST, skipSquare + Direction.NORTH_WEST },
+                _ => Array.Empty<Square>()
+            };
+
+            return HasPawnInPosition(side, pawnSquares, skipSquare);
+        }
         
         public Square GetPawnSkipSquare(Side side) => pawnSkipPositions[side];
         public void SetPawnSkipSquare(Side side, Square square) => pawnSkipPositions[side] = square;
 
         public bool IsSquareEmpty(Square square) => this[square] == null;
+        public bool IsSquareEmpty(int x, int y) => this[x, y] == null;
 
         public static int SquareToIndex(Square square) => PosToIndex(square.Position);
         public static Square IndexToSquare(int index) => new Square(IndexToPos(index));

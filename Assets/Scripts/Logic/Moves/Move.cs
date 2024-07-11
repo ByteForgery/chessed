@@ -11,7 +11,7 @@ namespace Chessed.Logic
         public Vector2Int FromPos => From.Position;
         public Vector2Int ToPos => To.Position;
 
-        public abstract void Execute(Board board);
+        public abstract MoveResult Execute(Board board);
 
         public virtual bool IsLegal(Board board)
         {
@@ -20,6 +20,22 @@ namespace Chessed.Logic
             Execute(boardCopy);
             return !boardCopy.IsInCheck(side);
         }
+    }
+
+    public readonly struct MoveResult
+    {
+        public bool IsPawnMove { get; }
+        public bool IsCapture { get; }
+        public bool IsCheck { get; }
+
+        public MoveResult(bool isPawnMove, bool isCapture, bool isCheck)
+        {
+            IsPawnMove = isPawnMove;
+            IsCapture = isCapture;
+            IsCheck = isCheck;
+        }
+
+        public bool ResetsFiftyMoveRule => IsPawnMove || IsCapture;
     }
 
     public enum MoveType

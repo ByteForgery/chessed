@@ -35,10 +35,14 @@ namespace Chessed.Logic
             }
         }
         
-        public override void Execute(Board board)
+        public override MoveResult Execute(Board board)
         {
+            Side side = board[From].side;
+            
             new NormalMove(From, To).Execute(board);
             new NormalMove(rookFrom, rookTo).Execute(board);
+
+            return new MoveResult(false, false, board.IsInCheck(side.Opponent()));
         }
 
         public override bool IsLegal(Board board)

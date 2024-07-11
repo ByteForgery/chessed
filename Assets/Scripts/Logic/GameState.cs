@@ -9,10 +9,18 @@ namespace Chessed.Logic
         public Side CurrentPlayer { get; private set; }
         public Result Result { get; private set; }
 
+        private int fiftyMoveRuleCounter = 0;
+        private string stateFEN;
+
+        private readonly Dictionary<string, int> stateHistory = new();
+
         public GameState(Board board, Side currentPlayer)
         {
             Board = board;
             CurrentPlayer = currentPlayer;
+
+            stateFEN = FEN.FromGame(currentPlayer, board);
+            stateHistory[stateFEN] = 1;
         }
 
         public IEnumerable<Move> LegalMovesForPiece(Square square)
@@ -34,8 +42,17 @@ namespace Chessed.Logic
         public void HandleMove(Move move)
         {
             Board.SetPawnSkipSquare(CurrentPlayer, null);
-            move.Execute(Board);
+
+            MoveResult result = move.Execute(Board);
+            if (result.ResetsFiftyMoveRule)
+            {
+                fiftyMoveRuleCounter = 0;
+                stateHistory.Clear();
+            } else
+                fiftyMoveRuleCounter++;
+            
             CurrentPlayer = CurrentPlayer.Opponent();
+            UpdateStateString();
             CheckForGameEnd();
         }
 
@@ -54,6 +71,10 @@ namespace Chessed.Logic
         {
             if (Board.HasInsufficientMaterial())
                 Result = Result.Draw(EndReason.InsufficientMaterial);
+            if (IsFiftyMoveRule)
+                Result = Result.Draw(EndReason.FiftyMoveRule);
+            if (IsThreefoldRepetition)
+                Result = Result.Draw(EndReason.ThreefoldRepetition);
             
             if (AllLegalMovesForSide(CurrentPlayer).Any()) return;
 
@@ -61,6 +82,17 @@ namespace Chessed.Logic
                 ? Result.Win(CurrentPlayer.Opponent())
                 : Result.Draw(EndReason.Stalemate);
         }
+
+        private void UpdateStateString()
+        {
+            stateFEN = FEN.FromGame(CurrentPlayer, Board);
+
+            if (!stateHistory.TryAdd(stateFEN, 1))
+                stateHistory[stateFEN]++;
+        }
+
+        private bool IsFiftyMoveRule => (fiftyMoveRuleCounter / 2) >= 50;
+        private bool IsThreefoldRepetition => stateHistory[stateFEN] == 3;
 
         public bool IsGameOver => Result != null;
     }

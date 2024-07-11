@@ -18,14 +18,19 @@ namespace Chessed.Logic
             this.promotionType = promotionType;
         }
 
-        public override void Execute(Board board)
+        public override MoveResult Execute(Board board)
         {
             Piece pawn = board[From];
+            bool isCapture = !board.IsSquareEmpty(To);
+            
             board[From] = null;
 
             Piece promotionPiece = CreatePromotionPiece(pawn.side);
             promotionPiece.hasMoved = true;
             board[To] = promotionPiece;
+
+            bool isCheck = board.IsInCheck(pawn.side.Opponent());
+            return new MoveResult(true, isCapture, isCheck);
         }
 
         private Piece CreatePromotionPiece(Side side) => promotionType switch
