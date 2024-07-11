@@ -6,8 +6,7 @@ namespace Chessed.Logic
     public class CastleMove : Move
     {
         public override MoveType Type { get; }
-        public override Square From { get; }
-        public override Square To { get; }
+        public override MoveSquares Squares { get; }
 
         private readonly Vector2Int kingMoveDir;
         private readonly Square rookFrom, rookTo;
@@ -15,24 +14,26 @@ namespace Chessed.Logic
         public CastleMove(MoveType type, Square kingSquare)
         {
             Type = type;
-            From = kingSquare;
+            Square to = null;
 
             int y = kingSquare.Y;
             switch (type)
             {
                 case MoveType.CastleKS:
                     kingMoveDir = Direction.EAST;
-                    To = new Square(6, y);
+                    to = new Square(6, y);
                     rookFrom = new Square(7, y);
                     rookTo = new Square(5, y);
                     break;
                 case MoveType.CastleQS:
                     kingMoveDir = Direction.WEST;
-                    To = new Square(2, y);
+                    to = new Square(2, y);
                     rookFrom = new Square(0, y);
                     rookTo = new Square(3, y);
                     break;
             }
+
+            Squares = new MoveSquares(kingSquare, to);
         }
         
         public override MoveResult Execute(Board board)

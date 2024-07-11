@@ -5,8 +5,10 @@ namespace Chessed.Logic
     public abstract class Move
     {
         public abstract MoveType Type { get; }
-        public abstract Square From { get; }
-        public abstract Square To { get; }
+        public abstract MoveSquares Squares { get; }
+
+        public Square From => Squares.From;
+        public Square To => Squares.To;
         
         public Vector2Int FromPos => From.Position;
         public Vector2Int ToPos => To.Position;
@@ -19,6 +21,20 @@ namespace Chessed.Logic
             Board boardCopy = board.Copy();
             Execute(boardCopy);
             return !boardCopy.IsInCheck(side);
+        }
+
+        public string Algebraic => From.Algebraic + To.Algebraic;
+    }
+
+    public class MoveSquares
+    {
+        public Square From { get; }
+        public Square To { get; }
+
+        public MoveSquares(Square from, Square to)
+        {
+            From = from;
+            To = to;
         }
     }
 

@@ -4,15 +4,13 @@
     {
         public override MoveType Type => MoveType.DoublePawn;
 
-        public override Square From { get; }
-        public override Square To { get; }
+        public override MoveSquares Squares { get; }
 
         private readonly Square skippedSquare;
 
         public DoublePawnMove(Square from, Square to)
         {
-            From = from;
-            To = to;
+            Squares = new MoveSquares(from, to);
             skippedSquare = new Square(from.X, (from.Y + to.Y) / 2);
         }
 

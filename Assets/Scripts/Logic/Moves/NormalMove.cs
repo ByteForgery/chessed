@@ -4,14 +4,9 @@
     {
         public override MoveType Type => MoveType.Normal;
         
-        public override Square From { get; }
-        public override Square To { get; }
+        public override MoveSquares Squares { get; }
 
-        public NormalMove(Square from, Square to)
-        {
-            From = from;
-            To = to;
-        }
+        public NormalMove(Square from, Square to) => Squares = new MoveSquares(from, to);
 
         public override MoveResult Execute(Board board)
         {

@@ -12,7 +12,7 @@ namespace Chessed.Logic
         public readonly Side side;
         public bool hasMoved;
 
-        public Piece(Side side) => this.side = side;
+        protected Piece(Side side) => this.side = side;
 
         public abstract Piece Copy();
 

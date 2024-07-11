@@ -22,6 +22,9 @@ namespace Chessed
 
         public void OnSquareInteract(int index)
         {
+            if (!manager.IsCurrentPlayer) return;
+
+            PlayerMoveProvider playerMoveProvider = (PlayerMoveProvider)manager.CurrentMoveProvider;
             if (manager.runningPromotion != null) return;
             
             Square interactedSquare = Board.IndexToSquare(index);
@@ -39,10 +42,10 @@ namespace Chessed
 
                     if (move.Type == MoveType.Promotion)
                     {
-                        manager.ExecutePromotion(move.From, move.To, manager.GameState.CurrentPlayer);
+                        manager.ExecutePromotion(move.Squares, manager.GameState.CurrentPlayer);
                     } else
-                        manager.ExecuteMove(move);
-                    
+                        playerMoveProvider.move = move;
+
                     manager.selectedSquare = null;
                     return;
                 }

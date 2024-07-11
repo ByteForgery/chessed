@@ -6,15 +6,13 @@ namespace Chessed.Logic
     {
         public override MoveType Type => MoveType.Promotion;
         
-        public override Square From { get; }
-        public override Square To { get; }
+        public override MoveSquares Squares { get; }
 
         private readonly PromotionType promotionType;
 
         public PawnPromotionMove(Square from, Square to, PromotionType promotionType)
         {
-            From = from;
-            To = to;
+            Squares = new MoveSquares(from, to);
             this.promotionType = promotionType;
         }
 
@@ -45,15 +43,16 @@ namespace Chessed.Logic
 
     public class Promotion
     {
-        public Square From { get; }
-        public Square To { get; }
+        public MoveSquares MoveSquares { get; }
         public Side Side { get; }
         public PromotionType type;
 
-        public Promotion(Square from, Square to, Side side)
+        public Square From => MoveSquares.From;
+        public Square To => MoveSquares.To;
+
+        public Promotion(MoveSquares squares, Side side)
         {
-            From = from;
-            To = to;
+            MoveSquares = squares;
             Side = side;
         }
     }

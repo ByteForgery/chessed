@@ -8,19 +8,21 @@ namespace Chessed.Logic
         public Board Board { get; }
         public Side CurrentPlayer { get; private set; }
         public Result Result { get; private set; }
-
-        private int fiftyMoveRuleCounter = 0;
-        private string stateFEN;
+        public Clock Clock { get; }
+        public string StateFEN { get; private set; }
+        
+        private int fiftyMoveRuleCounter;
 
         private readonly Dictionary<string, int> stateHistory = new();
 
-        public GameState(Board board, Side currentPlayer)
+        public GameState(Board board, ClockSettings clockSettings, Side currentPlayer)
         {
             Board = board;
+            Clock = new Clock(clockSettings, this);
             CurrentPlayer = currentPlayer;
 
-            stateFEN = FEN.FromGame(currentPlayer, board);
-            stateHistory[stateFEN] = 1;
+            StateFEN = FEN.FromGame(currentPlayer, board);
+            stateHistory[StateFEN] = 1;
         }
 
         public IEnumerable<Move> LegalMovesForPiece(Square square)
@@ -39,7 +41,7 @@ namespace Chessed.Logic
             HandleMove(move);
         }
 
-        public void HandleMove(Move move)
+        public MoveResult HandleMove(Move move)
         {
             Board.SetPawnSkipSquare(CurrentPlayer, null);
 
@@ -51,9 +53,12 @@ namespace Chessed.Logic
             } else
                 fiftyMoveRuleCounter++;
             
+            Clock.OnMove();
             CurrentPlayer = CurrentPlayer.Opponent();
-            UpdateStateString();
+            UpdateStateFEN();
             CheckForGameEnd();
+
+            return result;
         }
 
         public IEnumerable<Move> AllLegalMovesForSide(Side side)
@@ -67,6 +72,8 @@ namespace Chessed.Logic
             return moveCandidates.Where(move => move.IsLegal(Board));
         }
 
+        public void EndGameByTimeout(Side winner) => Result = Result.Win(winner, EndReason.Timeout);
+
         private void CheckForGameEnd()
         {
             if (Board.HasInsufficientMaterial())
@@ -79,20 +86,21 @@ namespace Chessed.Logic
             if (AllLegalMovesForSide(CurrentPlayer).Any()) return;
 
             Result = Board.IsInCheck(CurrentPlayer)
-                ? Result.Win(CurrentPlayer.Opponent())
+                ? Result.Win(CurrentPlayer.Opponent(), EndReason.Checkmate)
                 : Result.Draw(EndReason.Stalemate);
+                
         }
 
-        private void UpdateStateString()
+        private void UpdateStateFEN()
         {
-            stateFEN = FEN.FromGame(CurrentPlayer, Board);
+            StateFEN = FEN.FromGame(CurrentPlayer, Board);
 
-            if (!stateHistory.TryAdd(stateFEN, 1))
-                stateHistory[stateFEN]++;
+            if (!stateHistory.TryAdd(StateFEN, 1))
+                stateHistory[StateFEN]++;
         }
 
         private bool IsFiftyMoveRule => (fiftyMoveRuleCounter / 2) >= 50;
-        private bool IsThreefoldRepetition => stateHistory[stateFEN] == 3;
+        private bool IsThreefoldRepetition => stateHistory[StateFEN] == 3;
 
         public bool IsGameOver => Result != null;
     }

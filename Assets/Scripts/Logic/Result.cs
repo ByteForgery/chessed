@@ -11,7 +11,7 @@
             Reason = reason;
         }
 
-        public static Result Win(Side winner) => new(winner, EndReason.Checkmate);
+        public static Result Win(Side winner, EndReason reason) => new(winner, reason);
 
         public static Result Draw(EndReason reason) => new(Side.None, reason);
     }

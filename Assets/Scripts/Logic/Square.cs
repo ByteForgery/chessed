@@ -34,8 +34,7 @@ namespace Chessed.Logic
             if (file < 'a' || file > 'h' || rank < 1 || rank > 8)
                 ThrowInvalidNotation();
 
-            X = file - 'a';
-            Y = 8 - rank;
+            Position = new Vector2Int(file - 'a', 8 - rank);
             return;
 
             void ThrowInvalidNotation() => throw new ArgumentException("Invalid algebraic notation!");

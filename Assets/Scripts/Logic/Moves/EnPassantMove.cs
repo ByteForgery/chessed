@@ -4,15 +4,13 @@
     {
         public override MoveType Type => MoveType.EnPassant;
 
-        public override Square From { get; }
-        public override Square To { get; }
+        public override MoveSquares Squares { get; }
 
         private readonly Square captureSquare;
 
         public EnPassantMove(Square from, Square to)
         {
-            From = from;
-            To = to;
+            Squares = new MoveSquares(from, to);
             captureSquare = new Square(to.X, from.Y);
         }
         
