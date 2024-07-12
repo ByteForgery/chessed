@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Chessed.Logic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Chessed
 {
@@ -10,7 +11,7 @@ namespace Chessed
     {
         public MoveSquares BestMoveSquares { get; private set; }
         
-        [SerializeField] private int searchDepth = 5;
+        [FormerlySerializedAs("searchDepth")] [SerializeField] private float searchTime = 5f;
         [SerializeField] private string stockfishPath;
         [SerializeField] private GameManager manager;
         [SerializeField] private BoardDisplay boardDisplay;
@@ -20,6 +21,7 @@ namespace Chessed
         private StreamReader output;
 
         private string StateFEN => manager.GameState.StateFEN;
+        private int SearchTimeMillis => (int)(searchTime * 1000f);
 
         private void Start()
         {
@@ -40,7 +42,7 @@ namespace Chessed
             SendCommand("isready");
             SendCommand("ucinewgame");
             SendCommand($"position fen {StateFEN}");
-            SendCommand($"go depth {searchDepth}");
+            SendCommand($"go movetime {SearchTimeMillis}");
 
             Task.Run(ReadStockfishOutputAsync);
         }
@@ -79,7 +81,7 @@ namespace Chessed
         public void OnMove(MoveSquares moveSquares)
         {
             SendCommand($"position fen {StateFEN} moves {moveSquares.From.Algebraic}{moveSquares.To.Algebraic}");
-            SendCommand($"go depth {searchDepth}");
+            SendCommand($"go movetime {SearchTimeMillis}");
         }
     }
 }
